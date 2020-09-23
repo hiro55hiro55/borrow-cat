@@ -32,9 +32,11 @@ Things you may want to cover:
 |shop_name| string    | null:false                     |
 |shop_address| string | null:false                     |
 |shop_phone| integer  | null:false                     |
-|password| string     | null:false                    |
+|password| string     | null:false                     |
 |password_confirmation| string  | null:false           |
-| payee  | string     | null:false                     |
+| financial_name  | string     | null:false            |
+| branch_name     | string     | null:false            |
+| account_number  | integer     | null:false           |
 
 ### Association
 - has_many :lend

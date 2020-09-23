@@ -1,2 +1,60 @@
-<h1>Lends#index</h1>
-<p>Find me in app/views/lends/index.html.erb</p>
+ <%= render "main_head" %>
+<div class="main">
+ <div class = "title-contents0">
+   <h2 class="service-title">
+   猫の手を貸し借りできるアプリ
+   </h2>
+   <p class="service-explain">
+      人材不足で困っている飲食店に、シフトを削るくらい余裕のある飲食店が
+   </p>
+   <p class="service-explain">
+    アルバイトをヘルプに出す、面識のない飲食店どうしが助け合うアプリです
+   </p>
+   <div class='store-btn'>
+      <%= link_to image_tag("https://linkmaker.itunes.apple.com/ja-jp/badge-lrg.svg?releaseDate=2011-09-21&kind=iossoftware&bubble=ios_apps", class:"apple-btn"), "#" %>
+      <%= link_to image_tag("dl-android.png", class:"google-btn"), "#" %>
+    </div>
+ </div>
+ <div class = "title-contents">
+ </div>
+ <%# 猫の手かりたいが選ばれる3つの理由部分 %>
+  <div class='select-reason-contents'>
+    <h2 class='title'>
+      貸し手、働き手、借り手、三方良しのアプリ
+    </h2>
+    <ul class='reason-lists'>
+      <li class='list'>
+        <%= image_tag "kakemoti.jpg", class:"list-pict" %>
+        <span class='reason-list-number'>1</span>
+        <h3 class='reason-list-text'>
+          <span class='reason-list-blue-text'>貸し手のメリット</span>
+          
+        </h3>
+        <p class='reason-list-description'>
+          ９５％以上のアルバイトスタッフが掛け持ちしてる理由を知ってますか？<br>１、いろんな人と出会いたい２、自分の決めた日以外、アルバイトをしたくないです。<br>もし、希望通りのシフトになると掛け持ちは減り、貴店への執着度は上がり必要以上に採用せずに済みます
+        </p>
+      </li>
+      <li class='list'>
+        <%= image_tag "hope.jpg", class:"list-pict" %>
+        <span class='reason-list-number'>2</span>
+        <h3 class='reason-list-text'>
+          <span class='reason-list-blue-text'>働き手のメリット</span>
+        </h3>
+        <p class='reason-list-description'>
+          希望のシフトが削られる機会が減り、新しい職場体験もできる。経験値が上がる
+        </p>
+      </li>
+      <li class='list'>
+        <%= image_tag "fusoku.png", class:"list-pict" %>
+        <span class='reason-list-number'>3</span>
+        <h3 class='reason-list-text'>
+          <span class='reason-list-blue-text'>借り手のメリット</span>
+        </h3>
+        <p class='reason-list-description'>
+          実戦経験があるスタッフが活躍してくれ、かつ時給が派遣会社に比べて安い
+        </p>
+      </li>
+    </ul>
+  </div>
+  <%# //猫の手のメリットの３つの部分 %>
+  <%= render "main_footer" %>
